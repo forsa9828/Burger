@@ -20,10 +20,10 @@ app.use(express.json());
 //Tell our server to listen on a specific port 
 
 const PORT = process.env.PORT || 3000;
-db.sequelize.sync().then(function(){
+//db.sequelize.sync().then(function(){
     app.listen(PORT, function(){
         console.log('Connected')
-    })
+    
 })
 
 
